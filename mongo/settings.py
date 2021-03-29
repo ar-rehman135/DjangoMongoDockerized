@@ -78,8 +78,13 @@ WSGI_APPLICATION = 'mongo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'new'
-    }
+        'NAME': 'new',
+        'CLIENT': {
+            # 'USER': 'test',
+            # 'PASSWORD': 'test1234',
+            'host': 'mongodb+srv://test:test1234@test.iocw1.mongodb.net/UltraNote?retryWrites=true&w=majority',
+        }
+    },
 }
 
 
